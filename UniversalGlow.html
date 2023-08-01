@@ -502,230 +502,229 @@
 
           <section>
             <!--contact section-->
-            <div class="d-flex justify-content-center">
-              <div class="section bg-white my-0 my-lg-5 py-0">
-                <div
-                  class="container py-5 rounded-6"
-                  style="
-                    background: url('https://www.sephora.com/productimages/sku/s2620235-av-4-zoom.jpg?imwidth=315')
-                      no-repeat 25% 100% / cover;
-                  "
-                >
-                  <div
-                    class="row justify-content-end align-items-md-center min-vh-60 mw-md"
-                  >
-                    <div class="col-md-7 col-lg-5">
-                      <h3 class="display-6 lh-sm mb-5" id="contact">
-                        Contact Us
-                      </h3>
 
-                      <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                        <!-- Name input-->
-                        <div class="form-floating mb-3">
-                          <input
-                            class="form-control"
-                            id="name"
-                            type="text"
-                            placeholder="Enter your name..."
-                            data-sb-validations="required"
-                          />
-                          <label for="name">Full name</label>
-                          <div
-                            class="invalid-feedback"
-                            data-sb-feedback="name:required"
+            <div class="section bg-white my-0 my-lg-5 py-0">
+              <div
+                class="container py-5 rounded-6"
+                style="
+                  background: url('https://www.sephora.com/productimages/sku/s2620235-av-4-zoom.jpg?imwidth=315')
+                    no-repeat 25% 100% / cover;
+                "
+              >
+                <div
+                  class="row justify-content-end align-items-md-center min-vh-60 mw-md"
+                >
+                  <div class="col-md-7 col-lg-5">
+                    <h3 class="display-6 lh-sm mb-5" id="contact">
+                      Contact Us
+                    </h3>
+
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                      <!-- Name input-->
+                      <div class="form-floating mb-3">
+                        <input
+                          class="form-control"
+                          id="name"
+                          type="text"
+                          placeholder="Enter your name..."
+                          data-sb-validations="required"
+                        />
+                        <label for="name">Full name</label>
+                        <div
+                          class="invalid-feedback"
+                          data-sb-feedback="name:required"
+                        >
+                          A name is required.
+                        </div>
+                      </div>
+                      <!-- Email address input-->
+                      <div class="form-floating mb-3">
+                        <input
+                          class="form-control"
+                          id="email"
+                          type="email"
+                          placeholder="name@example.com"
+                          data-sb-validations="required,email"
+                        />
+                        <label for="email">Email address</label>
+                        <div
+                          class="invalid-feedback"
+                          data-sb-feedback="email:required"
+                        >
+                          An email is required.
+                        </div>
+                        <div
+                          class="invalid-feedback"
+                          data-sb-feedback="email:email"
+                        >
+                          Email is not valid.
+                        </div>
+                      </div>
+                      <!-- Phone number input-->
+                      <div class="form-floating mb-3">
+                        <input
+                          class="form-control"
+                          id="phone"
+                          type="tel"
+                          placeholder="(123) 456-7890"
+                          data-sb-validations="required"
+                        />
+                        <label for="phone">Phone number</label>
+                        <div
+                          class="invalid-feedback"
+                          data-sb-feedback="phone:required"
+                        >
+                          A phone number is required.
+                        </div>
+                      </div>
+                      <!-- Message input-->
+                      <div class="form-floating mb-3">
+                        <textarea
+                          class="form-control"
+                          id="message"
+                          type="text"
+                          placeholder="Enter your message here..."
+                          style="height: 10rem"
+                          data-sb-validations="required"
+                        ></textarea>
+                        <label for="message">Message</label>
+                        <div
+                          class="invalid-feedback"
+                          data-sb-feedback="message:required"
+                        >
+                          A message is required.
+                        </div>
+                      </div>
+                      <!-- Submit success message-->
+                      <!---->
+                      <!-- This is what your users will see when the form-->
+                      <!-- has successfully submitted-->
+                      <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3">
+                          <div class="fw-bolder">
+                            Form submission successful!
+                          </div>
+                          To activate this form, sign up at
+                          <br />
+                          <a
+                            href="https://startbootstrap.com/solution/contact-forms"
+                            >https://startbootstrap.com/solution/contact-forms</a
                           >
-                            A name is required.
-                          </div>
                         </div>
-                        <!-- Email address input-->
-                        <div class="form-floating mb-3">
-                          <input
-                            class="form-control"
-                            id="email"
-                            type="email"
-                            placeholder="name@example.com"
-                            data-sb-validations="required,email"
-                          />
-                          <label for="email">Email address</label>
-                          <div
-                            class="invalid-feedback"
-                            data-sb-feedback="email:required"
-                          >
-                            An email is required.
-                          </div>
-                          <div
-                            class="invalid-feedback"
-                            data-sb-feedback="email:email"
-                          >
-                            Email is not valid.
-                          </div>
+                      </div>
+                      <!-- Submit error message-->
+                      <!---->
+                      <!-- This is what your users will see when there is-->
+                      <!-- an error submitting the form-->
+                      <div class="d-none" id="submitErrorMessage">
+                        <div class="text-center text-danger mb-3">
+                          Error sending message!
                         </div>
-                        <!-- Phone number input-->
-                        <div class="form-floating mb-3">
-                          <input
-                            class="form-control"
-                            id="phone"
-                            type="tel"
-                            placeholder="(123) 456-7890"
-                            data-sb-validations="required"
-                          />
-                          <label for="phone">Phone number</label>
-                          <div
-                            class="invalid-feedback"
-                            data-sb-feedback="phone:required"
-                          >
-                            A phone number is required.
-                          </div>
-                        </div>
-                        <!-- Message input-->
-                        <div class="form-floating mb-3">
-                          <textarea
-                            class="form-control"
-                            id="message"
-                            type="text"
-                            placeholder="Enter your message here..."
-                            style="height: 10rem"
-                            data-sb-validations="required"
-                          ></textarea>
-                          <label for="message">Message</label>
-                          <div
-                            class="invalid-feedback"
-                            data-sb-feedback="message:required"
-                          >
-                            A message is required.
-                          </div>
-                        </div>
-                        <!-- Submit success message-->
-                        <!---->
-                        <!-- This is what your users will see when the form-->
-                        <!-- has successfully submitted-->
-                        <div class="d-none" id="submitSuccessMessage">
-                          <div class="text-center mb-3">
-                            <div class="fw-bolder">
-                              Form submission successful!
-                            </div>
-                            To activate this form, sign up at
-                            <br />
-                            <a
-                              href="https://startbootstrap.com/solution/contact-forms"
-                              >https://startbootstrap.com/solution/contact-forms</a
-                            >
-                          </div>
-                        </div>
-                        <!-- Submit error message-->
-                        <!---->
-                        <!-- This is what your users will see when there is-->
-                        <!-- an error submitting the form-->
-                        <div class="d-none" id="submitErrorMessage">
-                          <div class="text-center text-danger mb-3">
-                            Error sending message!
-                          </div>
-                        </div>
-                        <!-- Submit Button-->
-                        <div class="d-grid">
-                          <button
-                            class="btn btn-primary btn-lg disabled"
-                            id="submitButton"
-                            type="submit"
-                          >
-                            Submit
-                          </button>
-                        </div>
-                      </form>
-                    </div>
+                      </div>
+                      <!-- Submit Button-->
+                      <div class="d-grid">
+                        <button
+                          class="btn btn-primary btn-lg disabled"
+                          id="submitButton"
+                          type="submit"
+                        >
+                          Submit
+                        </button>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
-
-              <section>
-                <!-- Footer-->
-                <hr />
-                <footer id="footer" class="bg-white border-0">
-                  <div class="container">
-                    <div class="d-flex justify-content-center">
-                      <div class="subscription-form">
-                        <span>Subscribe and stay up to date</span>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input
-                          type="email"
-                          placeholder="Enter your email address"
-                        />
-                        <input type="submit" value="Subscribe" />
-                      </div>
-                    </div>
-                    <br />
-                    <p>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get
-                      20% off on our first purchase!
-                    </p>
-
-                    <br /><br />
-                    <hr />
-
-                    <div class="address">
-                      890 Rhodes: 123 Main Street, Pretoria, Johannesburg, 1198
-                    </div>
-
-                    <div class="phone">Phone Number: (010) 456-7890</div>
-
-                    <div class="hours">
-                      Business Hours <br />
-                      Mon-Fri: 9 AM - 5 PM <br />Sat-Sun: 9AM- 2PM
-                    </div>
-
-                    <div class="d-flex justify-content-center">
-                      <a
-                        href="#"
-                        class="social-icon si-small text-light bg-color bg-opacity-10 color h-bg-facebook border-0"
-                      >
-                        <i class="fa-brands fa-facebook-f"></i>
-                        <i class="fa-brands fa-facebook-f"></i>
-                      </a>
-
-                      <a
-                        href="#"
-                        class="social-icon si-small text-light bg-color bg-opacity-10 color h-bg-twitter border-0"
-                      >
-                        <i class="fa-brands fa-twitter"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                      </a>
-
-                      <a
-                        href="#"
-                        class="social-icon si-small text-light bg-color bg-opacity-10 color h-bg-pinterest border-0"
-                      >
-                        <i class="fa-brands fa-pinterest-p"></i>
-                        <i class="fa-brands fa-pinterest-p"></i>
-                      </a>
-
-                      <a
-                        href="#"
-                        class="social-icon si-small text-light bg-color bg-opacity-10 color h-bg-instagram border-0"
-                      >
-                        <i class="bi-instagram"></i>
-                        <i class="bi-instagram"></i>
-                      </a>
-                    </div>
-                  </div>
-
-                  <br />
-                  <div class="row justify-content-center mt-5">
-                    <div class="col-auto">
-                      <div class="card border-color op-04">
-                        <div class="card-body py-3 px-4">
-                          <small class=""
-                            >&copy; 2023 All Rights Reserved by Canvas
-                            Inc.</small
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- .footer-widgets-wrap end -->
-                </footer>
-              </section>
             </div>
+
+            <section>
+              <!-- Footer-->
+              <hr />
+              <footer id="footer" class="bg-white border-0">
+                <div class="container">
+                  <div class="d-flex justify-content-center">
+                    <div class="subscription-form">
+                      <span>Subscribe and stay up to date</span>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input
+                        type="email"
+                        placeholder="Enter your email address"
+                      />
+                      <input type="submit" value="Subscribe" />
+                    </div>
+                  </div>
+                  <br />
+                  <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get
+                    20% off on our first purchase!
+                  </p>
+
+                  <br /><br />
+                  <hr />
+
+                  <div class="address">
+                    890 Rhodes: 123 Main Street, Pretoria, Johannesburg, 1198
+                  </div>
+
+                  <div class="phone">Phone Number: (010) 456-7890</div>
+
+                  <div class="hours">
+                    Business Hours <br />
+                    Mon-Fri: 9 AM - 5 PM <br />Sat-Sun: 9AM- 2PM
+                  </div>
+
+                  <div class="d-flex justify-content-center">
+                    <a
+                      href="#"
+                      class="social-icon si-small text-light bg-color bg-opacity-10 color h-bg-facebook border-0"
+                    >
+                      <i class="fa-brands fa-facebook-f"></i>
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a
+                      href="#"
+                      class="social-icon si-small text-light bg-color bg-opacity-10 color h-bg-twitter border-0"
+                    >
+                      <i class="fa-brands fa-twitter"></i>
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a
+                      href="#"
+                      class="social-icon si-small text-light bg-color bg-opacity-10 color h-bg-pinterest border-0"
+                    >
+                      <i class="fa-brands fa-pinterest-p"></i>
+                      <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+
+                    <a
+                      href="#"
+                      class="social-icon si-small text-light bg-color bg-opacity-10 color h-bg-instagram border-0"
+                    >
+                      <i class="bi-instagram"></i>
+                      <i class="bi-instagram"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <br />
+                <div class="row justify-content-center mt-5">
+                  <div class="col-auto">
+                    <div class="card border-color op-04">
+                      <div class="card-body py-3 px-4">
+                        <small class=""
+                          >&copy; 2023 All Rights Reserved by Canvas Inc.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- .footer-widgets-wrap end -->
+              </footer>
+            </section>
+
             <!-- #wrapper end -->
 
             <!-- Go To Top
